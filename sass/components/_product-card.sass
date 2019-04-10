@@ -37,15 +37,13 @@
     left: 70px
     z-index: 10
   &--btn
+    @extend .btn
     display: none
-    justify-content: center
-    align-items: center
     color: #fff
-    font: 700 13px 13px Lato
-    white-space: nowrap
+    font: 400 13px 13px Lato
     background: none
     border: 2px solid #fff
-    border-radius: 3px
+    transition: all .5s
     &-add
       @extend .card--btn
       width: 123px
@@ -55,6 +53,8 @@
       @extend .card--btn
       width: 57px
       height: 38px
+    &:hover
+      border-color: #f16d7f
   &--icon
     &-add
       margin-right: 8px
